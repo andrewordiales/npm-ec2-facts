@@ -1,0 +1,35 @@
+{
+  "name": "ec2-facts",
+  "version": "0.0.1",
+  "description": "NPM Package to save AWS EC2 Instance Metadata into a Puppet Custom Facts",
+  "main": "index.js",
+  "bin": {
+    "ec2-facts":"./bin/ec2-facts"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andruandru/npm-ec2-facts.git"
+  },
+  "keywords": [
+    "aws",
+    "ec2",
+    "metadata",
+    "puppet",
+    "facter",
+    "custom",
+    "facts"
+  ],
+  "author": "Andrew Ordiales <andrew.ordiales@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andruandru/npm-ec2-facts/issues"
+  },
+  "homepage": "https://github.com/andruandru/npm-ec2-facts#readme",
+  "devDependencies": {
+    "chai": "3.2.0",
+    "mocha": "2.2.5"
+  }
+}

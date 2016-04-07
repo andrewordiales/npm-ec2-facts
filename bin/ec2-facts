@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var lib = require('..');
+
+lib.configs(function(configs) {
+
+  var fact = new lib.Fact(configs);
+
+  var ec2mdCallback = function(metaData, value) {
+    fact.save(metaData, value);
+  }
+
+  lib.ec2md.getInstanceId(ec2mdCallback);
+
+  lib.ec2md.getAvailabilityZone(ec2mdCallback);
+
+
+});
