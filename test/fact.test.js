@@ -1,13 +1,14 @@
 var chai = require('chai');
 var expect = chai.expect;
 var fs = require('fs');
+var path = require('path');
 
 var ec2facts = {
   lib: require('..')
 }
 
 var testConfig = {
-  externalFactsFolder: fs.realpathSync(__dirname+'/tmp')
+  externalFactsFolder: fs.realpathSync(__dirname+path.sep+'etc')
 }
 
 
@@ -22,7 +23,7 @@ describe('ec2facts.lib.Fact', function() {
     fs.unlinkSync(fact.getFactFilePath(testKey));
   })
 
-  it('saves the fact key & value in configs.externalFactsFolder', function() {
+  it('saves the fact key & value in configs.externalFactsFolder', function(done) {
 
     fact.save(testKey, testValue, function() {
       var savedFact = JSON.parse(fs.readFileSync(
@@ -33,6 +34,7 @@ describe('ec2facts.lib.Fact', function() {
       expect(
         savedFact[testKey]
       ).to.equal(testValue);
+      done();
     });
 
   })
