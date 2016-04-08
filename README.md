@@ -4,12 +4,33 @@ NPM Package to save AWS EC2 Instance Metadata into a Puppet Custom Facts
 ## Installation
 
 ```
-$ sudo npm install ec2-facts -g
+$ sudo npm install -g ec2-facts
 ```
 
 > **Current Release**
 >
 > Alpha version is here! A lot of changes is on the way!
+
+## Configuration
+
+`ec2-facts` searches and reads a JSON formatted file named `ec2-facts.conf.json` in `/etc`.
+
+| Configuration Parameter | Description |
+| --- | --- |
+| `externalFactsFolder`| Location of Facter's external facts |
+
+```
+{
+  "externalFactsFolder":"/some/folder"
+}
+```
+
+
+## Usage
+
+```
+# ec2-facts
+```
 
 ## Notes on Alpha Version  
 
