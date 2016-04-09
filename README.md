@@ -34,9 +34,14 @@ $ sudo npm install -g ec2-facts
 
 ## Notes on Alpha Version  
 
-1. Currently fetches only 2 metadata:
-  * instance-id
+1. Currently fetches the following metadata:
+  * ami-id
+  * ami-launch-index
   * availability-zone
+  * instance-id
+  * instance-type
+  * public-hostname
+  * public-ipv4
   * _more metadata on next release :)_
 
 2. Facts are saved in JSON format.

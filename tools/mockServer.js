@@ -6,12 +6,12 @@ var mockEc2MetadataServer = {
   start: function() {
     this.httpServer = http.createServer(this.requestHandler);
     this.httpServer.listen(this.port, this.hostname, function() {
-      console.info('>> EC2 Metadata Server Started!');
+      console.info(' >> EC2 Metadata Server Started!');
     })
   },
   stop: function() {
     this.httpServer.close(function() {
-      console.info('>> Stopping EC2 Metadata Server.');
+      console.info(' >> Stopping EC2 Metadata Server.');
     });
   },
   requestHandler: function(request, response) {
