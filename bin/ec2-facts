@@ -10,12 +10,14 @@ lib.configs(function(configs) {
     fact.save(metaData, value);
   }
 
-  lib.ec2md.getMetadata('ami-id', '/ami-id', ec2mdCallback);
-  lib.ec2md.getMetadata('ami-launch-index', '/ami-launch-index', ec2mdCallback);
-  lib.ec2md.getMetadata('availability-zone', '/placement/availability-zone', ec2mdCallback);
-  lib.ec2md.getMetadata('instance-id', '/instance-id', ec2mdCallback);
-  lib.ec2md.getMetadata('instance-type', '/instance-type', ec2mdCallback);
-  lib.ec2md.getMetadata('public-hostname', '/public-hostname', ec2mdCallback);
-  lib.ec2md.getMetadata('public-ipv4', '/public-ipv4', ec2mdCallback);
-  
+  lib.ec2md.getEc2Data('ami-id', '/meta-data/ami-id', ec2mdCallback);
+  lib.ec2md.getEc2Data('ami-launch-index', '/meta-data/ami-launch-index', ec2mdCallback);
+  lib.ec2md.getEc2Data('availability-zone', '/meta-data/placement/availability-zone', ec2mdCallback);
+  lib.ec2md.getEc2Data('instance-id', '/meta-data/instance-id', ec2mdCallback);
+  lib.ec2md.getEc2Data('instance-type', '/meta-data/instance-type', ec2mdCallback);
+  lib.ec2md.getEc2Data('public-hostname', '/meta-data/public-hostname', ec2mdCallback);
+  lib.ec2md.getEc2Data('public-ipv4', '/meta-data/public-ipv4', ec2mdCallback);
+
+  lib.ec2md.getEc2Data('user-data', '/user-data', ec2mdCallback);
+
 });

@@ -20,6 +20,12 @@ var mockEc2MetadataServer = {
         response.end('i-1234567890abcdef0');
         break;
 
+      case '/latest/user-data':
+
+        //TODO should be application/x-octetstream
+        response.end('1234,john,reboot,true | 4512,richard, | 173,,,');
+        break;
+
       default:
         response.end('ok');
     }//end of switch

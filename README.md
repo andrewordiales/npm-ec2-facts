@@ -9,7 +9,7 @@ $ sudo npm install -g ec2-facts
 
 > **Current Release**
 >
-> Alpha version is here! A lot of changes is on the way!
+> _Alpha_ v0.0.2 is here! A lot of changes is on the way!
 
 ## Configuration
 
