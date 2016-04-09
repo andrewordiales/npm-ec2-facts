@@ -10,9 +10,12 @@ lib.configs(function(configs) {
     fact.save(metaData, value);
   }
 
-  lib.ec2md.getInstanceId(ec2mdCallback);
-
-  lib.ec2md.getAvailabilityZone(ec2mdCallback);
-
-
+  lib.ec2md.getMetadata('ami-id', '/ami-id', ec2mdCallback);
+  lib.ec2md.getMetadata('ami-launch-index', '/ami-launch-index', ec2mdCallback);
+  lib.ec2md.getMetadata('availability-zone', '/placement/availability-zone', ec2mdCallback);
+  lib.ec2md.getMetadata('instance-id', '/instance-id', ec2mdCallback);
+  lib.ec2md.getMetadata('instance-type', '/instance-type', ec2mdCallback);
+  lib.ec2md.getMetadata('public-hostname', '/public-hostname', ec2mdCallback);
+  lib.ec2md.getMetadata('public-ipv4', '/public-ipv4', ec2mdCallback);
+  
 });
