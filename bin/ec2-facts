@@ -12,11 +12,29 @@ lib.configs(function(configs) {
 
   lib.ec2md.getEc2Data('ami-id', '/meta-data/ami-id', ec2mdCallback);
   lib.ec2md.getEc2Data('ami-launch-index', '/meta-data/ami-launch-index', ec2mdCallback);
-  lib.ec2md.getEc2Data('availability-zone', '/meta-data/placement/availability-zone', ec2mdCallback);
+  lib.ec2md.getEc2Data('ami-manifest-path', '/meta-data/ami-manifest-path', ec2mdCallback);
+  lib.ec2md.getEc2Data('ancestor-ami-ids', '/meta-data/ancestor-ami-ids', ec2mdCallback);
+
   lib.ec2md.getEc2Data('instance-id', '/meta-data/instance-id', ec2mdCallback);
   lib.ec2md.getEc2Data('instance-type', '/meta-data/instance-type', ec2mdCallback);
+
+  lib.ec2md.getEc2Data('kernel-id', '/meta-data/kernel-id', ec2mdCallback);
+
+  lib.ec2md.getEc2Data('local-hostname', '/meta-data/local-hostname', ec2mdCallback);
+  lib.ec2md.getEc2Data('local-ipv4', '/meta-data/local-ipv4', ec2mdCallback);
+
+  lib.ec2md.getEc2Data('mac', '/meta-data/mac', ec2mdCallback);
+
+  lib.ec2md.getEc2Data('availability-zone', '/meta-data/placement/availability-zone', ec2mdCallback);
+  lib.ec2md.getEc2Data('product-codes', '/meta-data/product-codes', ec2mdCallback);
   lib.ec2md.getEc2Data('public-hostname', '/meta-data/public-hostname', ec2mdCallback);
   lib.ec2md.getEc2Data('public-ipv4', '/meta-data/public-ipv4', ec2mdCallback);
+
+  lib.ec2md.getEc2Data('ramdisk-id', '/meta-data/ramdisk-id', ec2mdCallback);
+  lib.ec2md.getEc2Data('reservation-id', '/meta-data/reservation-id', ec2mdCallback);
+  lib.ec2md.getEc2Data('security-groups', '/meta-data/security-groups', ec2mdCallback);
+  lib.ec2md.getEc2Data('services-domain', '/meta-data/services/domain', ec2mdCallback);
+  lib.ec2md.getEc2Data('spot-termination-time', '/meta-data/spot/termination-time', ec2mdCallback);
 
   lib.ec2md.getEc2Data('user-data', '/user-data', ec2mdCallback);
 
