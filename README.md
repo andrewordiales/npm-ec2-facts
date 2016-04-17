@@ -7,9 +7,15 @@ NPM Package to save AWS EC2 Instance Metadata into a Puppet Custom Facts
 $ sudo npm install -g ec2-facts
 ```
 
+_or_
+
+```
+$ sudo npm install -g --ignore-scripts ec2-facts
+```
+
 > **Current Release**
 >
-> _Alpha_ v0.0.3 is here! A lot of changes is on the way!
+> _Alpha_ v0.0.5 is here! A lot of changes is on the way!
 
 ## Configuration
 

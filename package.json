@@ -1,10 +1,10 @@
 {
   "name": "ec2-facts",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "NPM Package to save AWS EC2 Instance Metadata into a Puppet Custom Facts",
   "main": "index.js",
   "bin": {
-    "ec2-facts":"./bin/ec2-facts"
+    "ec2-facts": "./bin/ec2-facts"
   },
   "scripts": {
     "test": "mocha test"
@@ -31,5 +31,9 @@
   "devDependencies": {
     "chai": "3.2.0",
     "mocha": "2.2.5"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
