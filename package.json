@@ -1,6 +1,6 @@
 {
   "name": "ec2-facts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NPM Package to save AWS EC2 Instance Metadata into a Puppet Custom Facts",
   "main": "index.js",
   "bin": {

@@ -7,7 +7,9 @@ lib.configs(function(configs) {
   var fact = new lib.Fact(configs);
 
   var ec2mdCallback = function(metaData, value) {
-    fact.save(metaData, value);
+    if(!!value) {
+      fact.save(metaData, value);
+    }
   }
 
   lib.ec2md.getEc2Data('ami-id', '/meta-data/ami-id', ec2mdCallback);
