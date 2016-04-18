@@ -15,7 +15,7 @@ $ sudo npm install -g --ignore-scripts ec2-facts
 
 > **Current Release**
 >
-> _Alpha_ v0.0.5 is here! A lot of changes is on the way!
+> _Alpha_ v0.0.6 is here! A lot of changes is on the way!
 
 ## Configuration
 
@@ -30,11 +30,11 @@ $ sudo npm install -g --ignore-scripts ec2-facts
 __Parameters__
 
 * `externalFactsFolder` - _string_ Location of Facter's external facts e.g. `/some/folder`
+* `factNamePrefix` - _string_ Fact name prefix e.g. `ec2-static-`
 
 __Parameters (under development)__
 
 * `exclude` - _array_ Metadata to exclude  e.g. `['instance-type', 'mac']`
-* `prefix` - _string_ Fact name/key prefix e.g.  `'aws-'`
 
 
 
