@@ -19,7 +19,7 @@ $ sudo npm install -g --ignore-scripts ec2-facts
 
 ## Configuration
 
-`ec2-facts` searches and reads a JSON formatted file named `ec2-facts.conf.json` in `/etc`.
+`ec2-facts` searches and reads a JSON formatted file named `ec2-facts.conf.json` in `/etc` _(Linux)_ or `%ALLUSERSPROFILE%\ec2-facts` _(Windows)_.
 
 ```
 {
