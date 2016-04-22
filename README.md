@@ -69,4 +69,4 @@ __Parameters (under development)__
   * _more metadata on next release :)_
 
 2. Facts are saved in JSON format.
-3. Default external facts folder is: `/etc/facter/facts.d`
+3. Default external facts folder is: `/etc/facter/facts.d` _(Linux)_ or `%ALLUSERSPROFILE%\PuppetLabs\facter\facts.d` _(Windows)_
