@@ -8,7 +8,8 @@ var ec2facts = {
 }
 
 var testConfig = {
-  externalFactsFolder: fs.realpathSync(__dirname+path.sep+'etc')
+  externalFactsFolder: fs.realpathSync(__dirname+path.sep+'etc'),
+  factNamePrefix: ''
 }
 
 
